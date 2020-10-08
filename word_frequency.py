@@ -7,9 +7,6 @@ STOP_WORDS = [
     'will', 'with'
 ]
 
-def is_punct(s):
-    return s.isprintable() and not (s.isalpha() or s.isspace() or s.isdigit())
-
 def format_word_freq(wf):
     format_width = max(len(w) for w in wf)
     output_string = ""
